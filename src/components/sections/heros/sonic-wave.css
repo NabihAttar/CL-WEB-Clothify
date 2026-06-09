@@ -1,0 +1,275 @@
+.sonic-wave-hero {
+	position: relative;
+	font-family: var(--font-inter), Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	touch-action: pan-y;
+	isolation: isolate;
+}
+
+.sonic-wave-hero__sticky {
+	position: sticky;
+	top: 0;
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.sonic-wave-hero__canvas {
+	position: absolute;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	will-change: contents;
+}
+
+.sonic-wave-hero__loader {
+	position: absolute;
+	inset: 0;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.sonic-wave-hero__loader-bar {
+	height: 1px;
+	width: 8rem;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.sonic-wave-hero__loader-fill {
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	transition: width 0.3s ease;
+}
+
+.sonic-wave-hero__loader-text {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.sonic-wave-hero__overlay {
+	pointer-events: none;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 7rem 1.5rem 2.5rem;
+}
+
+.sonic-wave-hero__intro {
+	max-width: 48rem;
+}
+
+.sonic-wave-hero__eyebrow {
+	margin-bottom: 1rem;
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.35em;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.sonic-wave-hero__title {
+	font-size: clamp(2.25rem, 6vw, 4.5rem);
+	font-weight: 600;
+	letter-spacing: -0.04em;
+	color: rgba(255, 255, 255, 0.9);
+	line-height: 1.05;
+}
+
+.sonic-wave-hero__center {
+	position: relative;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.sonic-wave-hero__tagline {
+	position: absolute;
+	text-align: center;
+	font-size: clamp(1.875rem, 5vw, 3.75rem);
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.sonic-wave-hero__product {
+	position: absolute;
+	max-width: 36rem;
+	text-align: center;
+}
+
+.sonic-wave-hero__product-title {
+	margin-top: 0.75rem;
+	font-size: clamp(1.5rem, 3vw, 2.25rem);
+	font-weight: 500;
+	letter-spacing: -0.04em;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.sonic-wave-hero__product-desc {
+	margin: 1rem auto 0;
+	max-width: 28rem;
+	font-size: 0.875rem;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.sonic-wave-hero__cta {
+	pointer-events: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.sonic-wave-hero__cta-title {
+	font-size: clamp(1.125rem, 2vw, 1.25rem);
+	font-weight: 500;
+	letter-spacing: -0.04em;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.sonic-wave-hero__cta-sub {
+	margin-top: 0.25rem;
+	font-size: 0.875rem;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.sonic-wave-hero__cta-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+.sonic-wave-hero__btn {
+	display: inline-flex;
+	min-height: 44px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 9999px;
+	padding: 0.75rem 2rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	text-decoration: none;
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.sonic-wave-hero__btn--primary {
+	background: #fff;
+	color: #050505;
+}
+
+.sonic-wave-hero__btn--primary:hover {
+	background: rgba(255, 255, 255, 0.9);
+	color: #050505;
+}
+
+.sonic-wave-hero__btn--ghost {
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.sonic-wave-hero__btn--ghost:hover {
+	border-color: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.05);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.sonic-wave-hero__btn:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 2px;
+}
+
+.sonic-wave-hero__scroll-hint {
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	display: flex;
+	transform: translateX(-50%);
+	flex-direction: column;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.sonic-wave-hero__scroll-label {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.35em;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.sonic-wave-hero__scroll-mouse {
+	display: flex;
+	height: 2.5rem;
+	width: 1.25rem;
+	align-items: flex-start;
+	justify-content: center;
+	border-radius: 9999px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 0.25rem;
+}
+
+.sonic-scroll-line {
+	height: 0.5rem;
+	width: 2px;
+	border-radius: 9999px;
+	background: rgba(255, 255, 255, 0.7);
+	animation: sonic-scroll-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sonic-scroll-pulse {
+	0%,
+	100% {
+		opacity: 0.35;
+		transform: scaleY(0.85);
+	}
+	50% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+}
+
+@media (min-width: 640px) {
+	.sonic-wave-hero__cta {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.sonic-wave-hero__product-desc {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.sonic-wave-hero__overlay {
+		padding: 8rem 3rem 3.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.sonic-wave-hero__overlay {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
