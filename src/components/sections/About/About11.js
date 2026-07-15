@@ -6,6 +6,11 @@ const About11 = () => {
 			<div className="container">
 				<div className="row rg-30 justify-content-between">
 					<div className="col-lg-6 col-md-12">
+						<div className="about-images-group-three hover:shine wow fadeInUp" data-wow-delay="0.1s">
+							<img src="/new-images/Home-Page/HomePage-AboutSection.png" alt="About Clothify" />
+						</div>
+					</div>
+					<div className="col-lg-6 col-md-12">
 						<div className="pricing-left-content">
 							<div className="sec-heading mb-0">
 								<span className="sub-title wow fadeInUp" data-wow-delay="0.1s">
@@ -18,8 +23,6 @@ const About11 = () => {
 								</h2>
 							</div>
 						</div>
-					</div>
-					<div className="col-lg-6 col-md-12">
 						<div className="desc mb-30 wow fadeInUp" data-wow-delay="0.3s">
 							<p>
 							Clothify is a software agency focused on creating modern digital solutions that help businesses grow, automate operations, and improve customer experience.

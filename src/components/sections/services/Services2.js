@@ -18,36 +18,42 @@ const Services2 = () => {
 			title: "Website Development",
 			desc: "We build modern, responsive, and SEO-friendly websites that help businesses attract customers, improve user experience, and grow online.",
 			icon: FiCode,
+			bgImg: "/new-images/Services-Page/ServicesPage-WebsiteDevelopment.png",
 		},
 		{
 			id: "mobile-app-development",
 			title: "Mobile Applications",
 			desc: "We create user-friendly mobile apps for businesses that need smooth performance, clean design, and reliable functionality.",
 			icon: FiSmartphone,
+			bgImg: "/new-images/Services-Page/ServicesPage-MobileApplications.png",
 		},
 		{
 			id: "erp-systems",
 			title: "ERP Systems",
 			desc: "We develop ERP systems that help businesses manage operations, inventory, finance, sales, and workflows in one organized platform.",
 			icon: FiDatabase,
+			bgImg: "/new-images/Services-Page/ServicesPage-ERPSystems.png",
 		},
 		{
 			id: "pos-systems",
 			title: "POS Systems",
 			desc: "We build smart POS systems for retail, restaurants, and companies that need faster sales, payment tracking, and accurate reports.",
 			icon: FiCreditCard,
+			bgImg: "/new-images/Services-Page/ServicesPage-POSSystems.png",
 		},
 		{
 			id: "desktop-applications",
 			title: "Desktop Applications",
 			desc: "We create secure and reliable desktop software for internal operations, data management, and business productivity.",
 			icon: FiMonitor,
+			bgImg: "/new-images/Services-Page/ServicesPage-DesktopApplications.png",
 		},
 		{
 			id: "business-automation",
 			title: "Business Automation",
 			desc: "We help businesses reduce manual work, automate daily tasks, improve workflows, and save time through smart digital solutions.",
 			icon: FiSettings,
+			bgImg: "/new-images/Services-Page/ServicesPage-BusinessAutomation.png",
 		},
 	];
 

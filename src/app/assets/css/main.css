@@ -11925,6 +11925,10 @@ blockquote cite::before {
   margin-bottom: 55px;
   position: relative;
   z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 1;
+  visibility: visible;
 }
 .service-style-2 .service-content {
   position: relative;
@@ -11967,6 +11971,9 @@ blockquote cite::before {
   visibility: visible;
 }
 .service-style-2:hover .service-icon {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
   background-color: var(--tj-color-common-white);
 }
 .service-style-2:hover .service-icon i {

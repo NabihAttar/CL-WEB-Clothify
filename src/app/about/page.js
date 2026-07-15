@@ -25,7 +25,7 @@ export default function About() {
 			<Header isHeaderTop={true} />
 			<Header isStickyHeader={true} />
 			<main>
-				<HeroInner title={"About"} text={"About"} />
+				<HeroInner title={"About"} text={"About"} heroImage="/new-images/About-Page/AboutPage-HeroSection.png" />
 				<About11 />
 				<Features type={2} />
 				<Funfact3 />

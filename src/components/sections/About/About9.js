@@ -12,7 +12,7 @@ const About9 = () => {
 								className="about-images-group-three hover:shine wow fadeInUp"
 								data-wow-delay="0.3s"
 							>
-								<img src="/images/about/h9-about-banner.webp" alt="Images" />
+								<img src="/new-images/Home-Page/HomePage-AboutSection.png" alt="Images" />
 							</div>
 							<div className="about-content-five h9-about-content">
 								<div className="sec-heading h9-section-heading style-4">

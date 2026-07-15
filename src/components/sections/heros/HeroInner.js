@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 // import { gsap, ScrollTrigger, ScrollSmoother, SplitText } from "@/lib/gsap.config.js";
-const HeroInner = ({ title, text, breadcrums = [], noNeedTitleAnim }) => {
+const HeroInner = ({ title, text, breadcrums = [], noNeedTitleAnim, heroImage }) => {
 	return (
 		<section
 			className="tj-page-header"
-			style={{ backgroundImage: `url('/images/bg/pheader-bg.webp')` }}
+			style={{ backgroundImage: `url('${heroImage || "/images/bg/pheader-bg.webp"}')` }}
 		>
 			<div className="container">
 				<div className="row">

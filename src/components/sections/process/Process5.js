@@ -36,19 +36,19 @@ const Process5 = () => {
 		{
 			id: 1,
 			title: "Discovery & Analysis",
-			img: "/images/process/h9-process-1.webp",
+			img: "/new-images/Home-Page/HomePage-Discovery&Analysis.png",
 			desc: "We understand your business goals, challenges, workflows, and project requirements before planning the right solution.",
 		},
 		{
 			id: 2,
 			title: "Planning & Design",
-			img: "/images/process/h9-process-2.webp",
+			img: "/new-images/Home-Page/HomePage-Planning&Design.png",
 			desc: "We create the project structure, user experience, features, and development roadmap based on your needs.",
 		},
 		{
 			id: 3,
 			title: "Development & Support",
-			img: "/images/process/h9-process-3.webp",
+			img: "/new-images/Home-Page/HomePage-Development&Support.png",
 			desc: "We build, test, launch, and support your website, app, ERP, POS, or custom software system.",
 		},
 	];

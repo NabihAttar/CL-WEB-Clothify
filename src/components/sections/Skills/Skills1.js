@@ -14,7 +14,7 @@ const Skills1 = () => {
 			ref={animContainerRef}
 			className="tj-skill-section"
 			style={{
-				backgroundImage: "url('/images/experience/experience-bg.webp')",
+				backgroundImage: "url('/new-images/About-Page/AboutPage-TechnicalSkills&Experience.png')",
 			}}
 		>
 			<div className="container">

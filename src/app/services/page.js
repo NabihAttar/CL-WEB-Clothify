@@ -22,7 +22,11 @@ export default function Services() {
 			<Header isHeaderTop={true} />
 			<Header isStickyHeader={true} />
 			<main>
-				<HeroInner title={"Services"} text={"Services"} />
+				<HeroInner
+					title={"Services"}
+					text={"Services"}
+					heroImage="/new-images/Services-Page/ServicesPage-HeroSection.png"
+				/>
 				<Services5 />
 
 

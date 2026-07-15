@@ -25,7 +25,7 @@ const ServiceCard2 = ({ service, idx, lastItem }) => {
 			<div className="thumb">
 				<Image
 					src={bgImg ? bgImg : "/images/service/h1-service-1.webp"}
-					alt="image"
+					alt={title || "service image"}
 					width={645}
 					height={670}
 					style={{ width: "100%", height: "100%" }}

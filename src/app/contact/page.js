@@ -12,7 +12,11 @@ export default function Contact() {
 			<Header isHeaderTop={true} />
 			<Header isStickyHeader={true} />
 			<main>
-				<HeroInner title={"Contact"} text={"Contact"} />
+				<HeroInner
+					title={"Contact"}
+					text={"Contact"}
+					heroImage="/new-images/Contact-Page/ContactPage-HeroSection.png"
+				/>
 				<ContactTop />
 				<Contact5 />
 				<Cta1 />
