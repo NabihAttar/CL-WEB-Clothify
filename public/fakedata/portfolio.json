@@ -1,407 +1,355 @@
 [
 	{
 		"id": 1,
-		"title": " Innovate consultancy",
+		"title": "WOOD MYTH ERP System",
 		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-1.webp",
-		"img2": "/images/project/h2-project-1.webp",
-		"img3": "/images/project/h7-project-1.webp",
-		"img4": "/images/project/h8-project-1.webp",
-		"img5": "/images/project/ward-portfolio.png",
-		"img6": "/images/project/h10-project-img-1.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-1.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "Branding",
+		"titleLarge": "Customized ERP system for a wood company in Papua New Guinea",
+		"img": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"img2": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"img3": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"img4": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"img5": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"img6": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"imgLarge": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"detailsImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
+		"desc": "A full ERP solution designed for a wood manufacturing business in Papua New Guinea, covering quotations, contracts, invoices, accounting, dashboards, reporting, and business partnerships in one unified system.",
+		"shortDesc": "Custom ERP platform for sales, finance, reporting, and partnership management.",
+		"desc1": "WOOD MYTH ERP System was developed to streamline the full operational cycle of a wood company, from quotation creation to contract approval, invoice handling, and accounting processes. The platform gives management clear visibility into business performance while reducing manual work across departments.",
+		"desc2": "The solution includes a professional admin dashboard, reporting tools, accounting workflows, and a partnership section to support both internal coordination and external business relations. Built with Electron JS, Node.js, and React, it is tailored for efficient day-to-day operations in a production-driven company.",
+		"client": "Mohamad Barada",
+		"service": "Custom ERP Development",
+		"category": "Enterprise Software",
+		"date": "4/13/2026",
+		"shareLinks": [
+			{ "label": "LinkedIn", "href": "https://www.linkedin.com/company/wood-myth-sal/", "icon": "fa-linkedin-in" },
+			{ "label": "Instagram", "href": "https://www.instagram.com/woodmythsal/", "icon": "fa-instagram" },
+			{ "label": "Website", "href": "https://woodmythsal.com", "icon": "fa-globe" }
+		],
+		"projectIntroduction": "This ERP platform was designed to support a wood business with a complete operational workflow from lead generation to financial closing. By combining sales, contracts, invoices, accounting, and reporting in a single system, the company gained better visibility and stronger process control.",
+		"projectOverview": "The system covers quotation management, contract workflow, invoice processing, accounting records, dashboard analytics, and partnership tracking. The admin panel is built to help management monitor performance, reduce delays, and maintain accurate business records across teams.",
+		"overviewPoints": [
+			"Quotation to contract workflow management",
+			"Professional admin dashboard for daily operations",
+			"Accounting and reporting modules for financial monitoring",
+			"Partnership system integrated within the same ERP environment"
+		],
+		"finalResult": "The result is a structured digital business system that organizes the company’s critical operations in one place. The client now benefits from a more efficient process flow, reduced manual administration, and a reliable reporting foundation for better decision-making and long-term growth.",
+		"categoryLabel": "ERP System",
 		"featured": true,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-2.png",
+		"featuredDesc": "A custom enterprise resource planning platform built to manage financial workflows, business operations, and reporting for a wood company in Africa.",
+		"featuredImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject1.png",
 		"employee": {
-			"name": "Jeremy Doughlas",
-			"desig": "UI & UX designer",
-			"img": "/img/project/project-1.png"
+			"name": "",
+			"desig": "",
+			"img": ""
 		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "branding",
+		"tags": ["ERP", "Accounting", "Dashboard", "Reporting"],
+		"dataFilter": "erp",
 		"statusItem": [
 			{
 				"title": "Category",
-				"desc": "Web Design"
+				"desc": "ERP System"
 			},
 			{
 				"title": "Client",
-				"desc": "Artboard Studio"
+				"desc": "Wood Myth"
 			},
 			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
+				"title": "Location",
+				"desc": "Papua New Guinea"
 			},
 			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
+				"title": "Technology",
+				"desc": "Electron JS, Node.js, React"
 			}
 		],
 		"descItems": [
 			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "The challenge",
+				"desc": "The client needed a unified system to manage quotations, contracts, invoices, and accounting records without relying on disconnected tools and manual processes. The business required a single platform that could support daily operations and executive decision-making."
 			},
 			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "Our approach",
+				"desc": "We designed a custom ERP experience with strong operational flow, clear financial controls, and reporting dashboards. The platform includes multiple modules that work together to support the company’s daily workflows, improve accuracy, and centralize business performance data."
 			}
 		]
 	},
 	{
 		"id": 2,
-		"title": "Strat edge solutions",
+		"title": "Shopplum | Premium Lingerie Store",
 		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-2.webp",
-		"img2": "/images/project/h2-project-2.webp",
-		"img3": "/images/project/h7-project-2.webp",
-		"img4": "/images/project/h8-project-2.webp",
-		"img5": "/images/project/alwafa-portfolio-800x580.png",
-		"img6": "/images/project/h10-project-img-2.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-2.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "UX/UI",
+		"titleLarge": "Customized e-commerce website for a premium lingerie brand in Beirut",
+		"img": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"img2": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"img3": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"img4": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"img5": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"img6": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"imgLarge": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"detailsImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
+		"desc": "A modern e-commerce platform for a lingerie business in Beirut, built to support email marketing, mobile shopping, order tracking, and a professional admin experience.",
+		"shortDesc": "Customized online store with order tracking, mobile-ready design, and admin controls.",
+		"desc1": "We built a custom storefront for a new lingerie brand that needed a polished digital presence and a strong foundation for growth. The website includes a mobile-friendly layout, easy product browsing, and a simplified customer journey designed to improve conversions.",
+		"desc2": "The project includes email marketing capability, a professional admin dashboard, order tracking, and integrated payment processing that is currently in progress. The system is structured to support both customer experience and business operations from one place.",
+		"client": "Aya Nayel",
+		"service": "Custom E-Commerce Development",
+		"category": "Retail & Lifestyle",
+		"date": "5/31/2026",
+		"shareLinks": [
+			{ "label": "Instagram", "href": "https://www.instagram.com/shopplum.co/", "icon": "fa-instagram" },
+			{ "label": "Website", "href": "https://shopplum.co", "icon": "fa-globe" }
+		],
+		"projectIntroduction": "Shopplum.co was designed to give a new lingerie brand a premium digital storefront that feels modern, trustworthy, and conversion-focused. The goal was to provide a clean shopping experience while giving the brand a strong base for marketing and business operations.",
+		"projectOverview": "The platform combines elegant storefront design with practical business functionality, including email marketing support, order tracking, a mobile-ready user experience, and a professional admin dashboard. It is structured to help the brand manage customers and operations more effectively as it grows.",
+		"overviewPoints": [
+			"Mobile-friendly online store experience",
+			"Professional admin dashboard for operations",
+			"Email marketing integration for customer engagement",
+			"Order tracking and payment processing support"
+		],
+		"finalResult": "The final website gives the brand a polished online presence and a more efficient sales process. With a customer-friendly interface and management tools built in, the business is positioned for stronger digital growth and smoother day-to-day operations.",
+		"categoryLabel": "E-Commerce",
 		"featured": true,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-3.png",
+		"featuredDesc": "A premium shopping experience for a Beirut-based lingerie brand, combining stylish design with business tools for growth and order management.",
+		"featuredImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject2.png",
 		"employee": {
 			"name": "",
 			"desig": "",
 			"img": ""
 		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "uxui",
+		"tags": ["E-Commerce", "Admin Dashboard", "Email Marketing", "Payments"],
+		"dataFilter": "ecommerce",
 		"statusItem": [
 			{
 				"title": "Category",
-				"desc": "Web Design"
+				"desc": "E-Commerce Website"
 			},
 			{
 				"title": "Client",
-				"desc": "Artboard Studio"
+				"desc": "Shopplum"
 			},
 			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
+				"title": "Location",
+				"desc": "Beirut"
 			},
 			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
+				"title": "Features",
+				"desc": "Email marketing, tracking, payments"
 			}
 		],
 		"descItems": [
 			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "The challenge",
+				"desc": "The brand needed a website that looked premium, made shopping easy, and supported a smooth post-purchase experience. Mobile responsiveness and operational visibility were essential for better customer service and performance tracking."
 			},
 			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "Our approach",
+				"desc": "We built a clean, modern storefront with a strong product presentation, user-friendly ordering flow, and a dedicated admin dashboard for managing sales and customer activity. Our solution combines brand presentation with backend functionality to support long-term growth."
 			}
 		]
 	},
 	{
 		"id": 3,
-		"title": "Prime strategy partners",
+		"title": "WARD.lb | Custom Flower Shop Experience",
 		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-3.webp",
-		"img2": "/images/project/h2-project-3.webp",
-		"img3": "/images/project/h7-project-3.webp",
-		"img4": "/images/project/h8-project-3.webp",
-		"img5": "/images/project/my-spot-cafe-800x580-cropped.png",
-		"img6": "/images/project/h10-project-img-3.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-3.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "Apps",
+		"titleLarge": "Modern e-commerce website and custom bouquet ordering experience for WARD.lb",
+		"img": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"img2": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"img3": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"img4": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"img5": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"img6": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"imgLarge": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"detailsImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
+		"desc": "A custom flower shop website designed to increase online sales, improve the customer journey, and let customers build their own bouquet from home.",
+		"shortDesc": "Modern online florist storefront with custom bouquet builder and admin management.",
+		"desc1": "This project was built for WARD.lb, a flower shop business that needed a more modern and conversion-focused online storefront. The website was designed to improve the customer journey, make ordering easier, and help the business sell more effectively online.",
+		"desc2": "The platform includes a complete home page, shop section, product search, user login and registration, shopping cart, contact pages, and a custom bouquet builder where customers can choose flower types, wrapping style, ribbon, extras, and personalized touches. The admin dashboard gives the business control over products and orders.",
+		"client": "Jamil Yassin",
+		"service": "Custom E-Commerce Development",
+		"category": "Retail & Lifestyle",
+		"date": "5/20/2026",
+		"shareLinks": [
+			{ "label": "Instagram", "href": "https://www.instagram.com/ward.lbb/", "icon": "fa-instagram" },
+			{ "label": "Website", "href": "https://wardlb.com", "icon": "fa-globe" }
+		],
+		"projectIntroduction": "WARD.lb required a digital storefront that would feel premium, functional, and easy for customers to use. The goal was to create a modern online ordering experience that helps increase sales, improves customer experience, and allows customers to customize bouquets from home.",
+		"projectOverview": "The website includes a home page, shop page, custom bouquet experience, product search, login and registration flow, shopping cart, contact pages, and a dedicated admin dashboard. The custom bouquet builder lets customers choose flower types, wrapping style, ribbon style, extras, and personal details before ordering.",
+		"overviewPoints": [
+			"Main website pages for browsing and discovery",
+			"Custom bouquet builder with personalization options",
+			"Customer login, registration, and shopping cart flow",
+			"Admin dashboard to manage products and orders"
+		],
+		"finalResult": "The business now has a modern, customer-friendly online ordering experience that supports sales growth and improves convenience. The personalized bouquet feature makes the store stand out, while the admin system helps the business manage the ordering journey more efficiently.",
+		"categoryLabel": "E-Commerce",
 		"featured": true,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-4.png",
+		"featuredDesc": "A flower shop website focused on product personalization, customer convenience, and online order growth.",
+		"featuredImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject3.png",
 		"employee": {
 			"name": "",
 			"desig": "",
 			"img": ""
 		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "mobile-app",
+		"tags": ["Flower Shop", "Custom Bouquet", "Admin Dashboard", "E-Commerce"],
+		"dataFilter": "flowers",
 		"statusItem": [
 			{
 				"title": "Category",
-				"desc": "Web Design"
+				"desc": "E-Commerce Website"
 			},
 			{
 				"title": "Client",
-				"desc": "Artboard Studio"
+				"desc": "WARD.lb"
 			},
 			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
+				"title": "Focus",
+				"desc": "Custom bouquet ordering"
 			},
 			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
+				"title": "Features",
+				"desc": "Shop, cart, login, dashboard"
 			}
 		],
 		"descItems": [
 			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "The challenge",
+				"desc": "The business wanted a digital experience that felt premium and practical, allowing customers to order flowers quickly while keeping the process easy for staff to manage. The challenge was to blend an attractive storefront with a custom bouquet configuration flow that still felt simple and intuitive."
 			},
 			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "Our approach",
+				"desc": "We designed a friendly and conversion-focused shopping journey with a custom bouquet builder, clear product discovery, and a responsive customer interface. The administrative layer supports product, order, and customer management, helping the business run more efficiently and professionally."
 			}
 		]
 	},
 	{
 		"id": 4,
-		"title": "Elevate enterprise",
+		"title": "BEAM | Bilingual NGO Website & Donation Platform",
 		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-4.webp",
-		"img2": "/images/project/h2-project-4.webp",
-		"img3": "/images/project/h7-project-1.webp",
-		"img4": "/images/project/h8-project-4.webp",
-		"img5": "/images/project/plum-portfolio1.png",
-		"img6": "/images/project/h10-project-img-1.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-4.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "Branding",
-		"featured": false,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-2.png",
+		"titleLarge": "Professional bilingual NGO website and donation platform for BEAM",
+		"img": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"img2": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"img3": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"img4": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"img5": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"img6": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"imgLarge": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"detailsImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
+		"desc": "A fully responsive bilingual website for BEAM, designed to support donations, volunteer registration, newsletters, event management, and a strong informative digital presence.",
+		"shortDesc": "Responsive bilingual NGO website with donation integration, volunteer flows, and admin tools.",
+		"desc1": "BEAM required a professional, responsive, bilingual informational website that could represent the organization clearly across desktop, tablet, and mobile devices. The project included an administration dashboard, project pages, news section, photo gallery, and contact page built for a modern and trustworthy digital presence.",
+		"desc2": "The website was developed in both Arabic and English, with Arabic right-to-left layout support, language switching, and a flexible structure for future content growth. Additional engagement features include volunteer application forms, online donation integration, newsletter subscriptions, event and workshop registration, and administrative access to submitted records. The solution also includes production deployment, security setup, SEO optimization, and administrator training.",
+		"client": "Nisreen Bou Ali",
+		"service": "Bilingual NGO Website Development",
+		"category": "Non-Profit & Community",
+		"date": "8/18/2026",
+		"shareLinks": [
+			{ "label": "Facebook", "href": "https://www.facebook.com/BeamLebaneseNGO/", "icon": "fa-facebook-f" },
+			{ "label": "Instagram", "href": "https://www.instagram.com/beam.ngo1/", "icon": "fa-instagram" }
+		],
+		"projectIntroduction": "BEAM needed a digital platform that could clearly communicate its mission, support bilingual access, and make it easy for supporters to donate, register as volunteers, and stay informed about projects and events. The goal was to build trust and increase engagement through a professional and accessible online experience.",
+		"projectOverview": "The website includes a responsive layout for mobile, tablet, and desktop devices, bilingual Arabic-English structure, project pages, news updates, photo gallery, contact page, and a secure admin dashboard. It also supports donation integration, volunteer applications, workshop registration, newsletter signups, and administrative management of submitted records.",
+		"overviewPoints": [
+			"Responsive bilingual website for desktop and mobile",
+			"Donation integration and secure deployment",
+			"Volunteer application and registration forms",
+			"News, projects, gallery, and event management"
+		],
+		"finalResult": "The final product is a professional, accessible, and bilingual website that strengthens BEAM’s digital presence while improving engagement and operational efficiency. It gives the organization a credible platform for fundraising, outreach, volunteer recruitment, and public communication.",
+		"categoryLabel": "NGO Website",
+		"featured": true,
+		"featuredDesc": "A bilingual NGO site built to improve awareness, fundraising, volunteer engagement, and operational administration.",
+		"featuredImg": "/new-images/Home-Page/HomePage-OurDigitalWorkProject4.png",
 		"employee": {
 			"name": "",
 			"desig": "",
 			"img": ""
 		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "branding",
+		"tags": ["NGO", "Bilingual", "Donation", "Volunteer"],
+		"dataFilter": "ngo",
 		"statusItem": [
 			{
 				"title": "Category",
-				"desc": "Web Design"
+				"desc": "NGO Website"
 			},
 			{
 				"title": "Client",
-				"desc": "Artboard Studio"
+				"desc": "BEAM"
 			},
 			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
+				"title": "Languages",
+				"desc": "Arabic + English"
 			},
 			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
+				"title": "Features",
+				"desc": "Donations, volunteer forms, newsletter"
 			}
 		],
 		"descItems": [
 			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "The challenge",
+				"desc": "BEAM needed a website that could communicate clearly, support bilingual content, and provide a simple way for supporters to donate, volunteer, and register for events. The organization also needed a secure and manageable system that could be handed over confidently to administrators."
 			},
 			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "Our approach",
+				"desc": "We designed a professional digital presence that balances storytelling, trust, and functionality. The final website supports fundraising, community engagement, and administrative efficiency, while also being easy to manage and maintain for future content updates and campaigns."
 			}
 		]
 	},
 	{
 		"id": 5,
-		"title": "Empower enterprise",
+		"title": "Timber ERP",
 		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-5.webp",
-		"img2": "/images/project/h2-project-2.webp",
-		"img3": "/images/project/h7-project-2.webp",
-		"img4": "/images/project/h8-project-1.webp",
-		"img5": "/images/project/h9-project-5.webp",
-		"img6": "/images/project/h10-project-img-1.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-4.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "Branding",
+		"titleLarge": "Executive ERP dashboard for sales, contracts, inventory, and business operations",
+		"img": "/images/project/timber-erp-portfolio.png",
+		"img2": "/images/project/timber-erp-portfolio.png",
+		"img3": "/images/project/timber-erp-portfolio.png",
+		"img4": "/images/project/timber-erp-portfolio.png",
+		"img5": "/images/project/timber-erp-portfolio.png",
+		"img6": "/images/project/timber-erp-portfolio.png",
+		"imgLarge": "/images/project/timber-erp-portfolio.png",
+		"detailsImg": "/images/project/timber-erp-portfolio.png",
+		"desc": "A custom ERP dashboard built to monitor sales, contracts, cash flow, inventory, and alerts in one centralized workspace.",
+		"shortDesc": "Executive ERP dashboard for business operations",
+		"desc1": "Timber ERP was designed to give management a single view of business performance across sales, contracts, invoicing, inventory, and alerts.",
+		"desc2": "The dashboard includes quick actions for quotations, contracts, payments, invoices, and inventory management, helping teams operate more efficiently from one platform.",
+		"category": "ERP",
 		"featured": false,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-2.png",
+		"featuredDesc": "Timber ERP dashboard helps businesses monitor sales, contracts, cash flow, inventory, and alerts in one place.",
+		"featuredImg": "/images/project/timber-erp-portfolio.png",
 		"employee": {
 			"name": "",
 			"desig": "",
 			"img": ""
 		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "branding",
+		"tags": ["ERP", "Dashboard"],
+		"dataFilter": "erp",
 		"statusItem": [
 			{
 				"title": "Category",
-				"desc": "Web Design"
+				"desc": "ERP System"
 			},
 			{
 				"title": "Client",
-				"desc": "Artboard Studio"
+				"desc": "Timber ERP"
 			},
 			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
+				"title": "Features",
+				"desc": "Sales, contracts, inventory, alerts"
 			},
 			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
+				"title": "Technology",
+				"desc": "Custom ERP Dashboard"
 			}
 		],
 		"descItems": [
 			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "The challenge",
+				"desc": "The client needed one centralized workspace to monitor business performance without switching between disconnected tools."
 			},
 			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
-			}
-		]
-	},
-	{
-		"id": 6,
-		"title": "Innovative solutions",
-		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-6.webp",
-		"img2": "/img/portfolio/portfolio-6-1.jpg",
-		"img3": "/images/project/h7-project-3.webp",
-		"img4": "/images/project/h8-project-2.webp",
-		"img5": "/images/project/h9-project-1.webp",
-		"img6": "/images/project/h10-project-img-1.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-4.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "Branding",
-		"featured": false,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-2.png",
-		"employee": {
-			"name": "",
-			"desig": "",
-			"img": ""
-		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "branding",
-		"statusItem": [
-			{
-				"title": "Category",
-				"desc": "Web Design"
-			},
-			{
-				"title": "Client",
-				"desc": "Artboard Studio"
-			},
-			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
-			},
-			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
-			}
-		],
-		"descItems": [
-			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
-			},
-			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
-			}
-		]
-	},
-	{
-		"id": 7,
-		"title": "Strat edge solutions",
-		"title2": "Project Description",
-		"titleLarge": "Transforming operational efficiency with start edge Solutions for businesses",
-		"img": "/images/project/h1-project-2.webp",
-		"img2": "/images/project/h2-project-2.webp",
-		"img3": "/images/project/h7-project-2.webp",
-		"img4": "/images/project/h8-project-2.webp",
-		"img5": "/images/project/h9-project-2.webp",
-		"img6": "/images/project/h10-project-img-2.webp",
-		"imgLarge": "/images/project/tj-project-1.webp",
-		"detailsImg": "/img/portfolio/portfolio-details-2.jpg",
-		"desc": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-		"shortDesc": "Project was about precision and information",
-		"desc1": "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-		"desc2": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-
-		"category": "UX/UI",
-		"featured": true,
-		"featuredDesc": " Project was about precision and information. That’s all. Our design tem helps clients achieve their marketing Trager and branding that appeals to a website",
-		"featuredImg": "/img/project/project-3.png",
-		"employee": {
-			"name": "",
-			"desig": "",
-			"img": ""
-		},
-		"tags": ["Strategy", "Growth"],
-		"dataFilter": "uxui",
-		"statusItem": [
-			{
-				"title": "Category",
-				"desc": "Web Design"
-			},
-			{
-				"title": "Client",
-				"desc": "Artboard Studio"
-			},
-			{
-				"title": "Start Date",
-				"desc": "August 20, 2023"
-			},
-			{
-				"title": "Designer",
-				"desc": "ThemeJunction"
-			}
-		],
-		"descItems": [
-			{
-				"title": "The story",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
-			},
-			{
-				"title": "OUR APPROACH",
-				"desc": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+				"title": "Our approach",
+				"desc": "We built an executive ERP dashboard with clear metrics, quick actions, and operational visibility across the full business workflow."
 			}
 		]
 	}
