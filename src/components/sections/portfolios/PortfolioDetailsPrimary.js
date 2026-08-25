@@ -3,9 +3,23 @@ import PopupVideo from "@/components/shared/popup-video/PopupVideo";
 import Image from "next/image";
 import Link from "next/link";
 import CtaSidebar from "../cta/CtaSidebar";
+
 const PortfolioDetailsPrimary = ({ option }) => {
 	const { prevId, nextId, currentItem, isPrevItem, isNextItem } = option || {};
-	const { title, titleLarge, id, imgLarge } = currentItem || {};
+	const {
+		title,
+		titleLarge,
+		imgLarge,
+		client,
+		service,
+		category,
+		date,
+		shareLinks,
+		projectIntroduction,
+		projectOverview,
+		overviewPoints,
+		finalResult,
+	} = currentItem || {};
 
 	return (
 		<section className="tj-post-area section-space">
@@ -19,10 +33,8 @@ const PortfolioDetailsPrimary = ({ option }) => {
 									data-wow-delay="0.1s"
 								>
 									<Image
-										src={
-											imgLarge ? imgLarge : "/images/project/tj-project-1.webp"
-										}
-										alt="post-image"
+										src={imgLarge ? imgLarge : "/images/project/tj-project-1.webp"}
+										alt={title || "project-image"}
 										width={870}
 										height={498}
 										style={{ height: "auto" }}
@@ -35,113 +47,52 @@ const PortfolioDetailsPrimary = ({ option }) => {
 									<ul>
 										<li>
 											<Link href="#" className="active">
-												Business
+												{category || "Business"}
 											</Link>
 										</li>
 										<li>
-											<Link href="#">Growth</Link>
+											<Link href="#">{service || "Growth"}</Link>
 										</li>
 									</ul>
 								</div>
 								<h3 className="tj-post-title text-anim">
-									{titleLarge
-										? titleLarge
-										: "Transforming operational efficiency with start edge Solutions for businesses"}
+									{titleLarge || title || "Project Overview"}
 								</h3>
 								<div className="tj-entry-content">
 									<p className="wow fadeInUp" data-wow-delay="0.1s">
-										Our mission is to empowers businesses size to thrive in an
-										businesses ever changing marketplace. We are committed to
-										the delivering exceptionals the value through strategic
-										inset, innovative approaches. Our consulting of our missing
-										empower businesses of all sizes to thrive. Committed to the
-										delivering exceptional in the values through our strategic
-										inset, i approaches empower. Our mission is to empowers
-										businesses
+										{projectIntroduction ||
+											"We created a tailored digital solution to help the client improve operations, customer engagement, and long-term business performance."}
 									</p>
 									<p className="wow fadeInUp" data-wow-delay="0.3s">
-										Our mission is to empowers businesses size to thrive in an
-										businesses ever changing marketplace. We are committed to
-										the delivering exceptionals the value through strategic
-										inset
+										{projectOverview ||
+											"The project focused on delivering an efficient, scalable, and user-friendly platform aligned with the client’s business goals."}
 									</p>
 									<div className="tj-check-list">
-										<h4 className="text-anim">Projects overview</h4>
+										<h4 className="text-anim">Project overview</h4>
 										<p className="wow fadeInUp" data-wow-delay="0.5s">
-											Develop and propose state-of-the-art solutions, including
-											technology upgrades, process reengineering, and automation
-											strategies, tailored to your business needs. Oversee the
-											deployment and integration of new systems and
-											technologies, ensuring minimal disruption to your ongoing
-											operations and seamless adaptation. Provide comprehensive
-											training for your team to ensure effective use of new
-											systems and ongoing support to address any issues or
-											challenges.Establish metrics and benchmarks to monitor the
-											impact of the new solutions.
+											{projectOverview ||
+												"The solution was designed to strengthen the client’s digital experience, streamline internal workflows, and support continued growth across their core business process."}
 										</p>
 										<ul className="ps-0 wow fadeInUp" data-wow-delay="0.6s">
-											<li>
-												<i className="tji-double-check"></i> Streamline
-												operations to reduce waste and enhance productivity.
-											</li>
-											<li>
-												<i className="tji-double-check"></i> Lower operational
-												costs through automation and optimized processes.
-											</li>
-											<li>
-												<i className="tji-double-check"></i> Improve overall
-												business performance with advanced solutions.
-											</li>
-											<li>
-												<i className="tji-double-check"></i> Benefit from
-												professional insights the transformation process.
-											</li>
+											{(overviewPoints || []).map((point, index) => (
+												<li key={index}>
+													<i className="tji-double-check"></i> {point}
+												</li>
+											))}
 										</ul>
-									</div>
-									<div
-										className="tj-post-thumb mb-0 hover:shine wow fadeInUp"
-										data-wow-delay="0.7s"
-									>
-										<Image
-											src="/images/blog/tj-blog-4.webp"
-											alt="post-image"
-											width={870}
-											height={498}
-											style={{ height: "auto" }}
-										/>
-										<PopupVideo>
-											<Link
-												className="play-btn glightbox video-popup"
-												href="https://www.youtube.com/watch?v=eEzD-Y97ges"
-											>
-												<i className="fa-sharp fa-solid fa-play"></i>
-											</Link>
-										</PopupVideo>
 									</div>
 									<h4 className="text-anim">Final result</h4>
 									<p className="wow fadeInUp" data-wow-delay="0.3s">
-										Our mission is to empowers businesses size to thrive in an
-										businesses ever changing marketplace. We are committed to
-										the delivering exceptionals the value through strategic
-										inset, innovative approaches. Our consulting of our missing
-										empower businesses of all sizes to thrive. Committed to the
-										delivering exceptional.
-									</p>
-									<p className="wow fadeInUp" data-wow-delay="0.5s">
-										Our mission is to empowers businesses size to thrive in an
-										businesses ever changing marketplace. We are committed to
-										the delivering exceptionals the value through strategic
-										inset.
+										{finalResult ||
+											"The final product delivered a stronger digital presence and a more efficient operating model, helping the client improve customer experience and business performance."}
 									</p>
 								</div>
 							</article>
 
-							{/* <!-- post navigation --> */}
 							<div
 								className="tj-post__navigation mb-0 wow fadeInUp"
 								data-wow-delay="0.1s"
 							>
-								{/* <!-- previous post --> */}
 								<div
 									className="tj-nav__post previous"
 									style={{ visibility: isPrevItem ? "visible" : "hidden" }}
@@ -155,10 +106,9 @@ const PortfolioDetailsPrimary = ({ option }) => {
 										</Link>
 									</div>
 								</div>
-								<Link href={"/portfolios"} className="tj-nav-post__grid">
+								<Link href="/portfolios" className="tj-nav-post__grid">
 									<i className="tji-square-cube"></i>
 								</Link>
-								{/* <!-- next post --> */}
 								<div
 									className="tj-nav__post next"
 									style={{ visibility: isNextItem ? "visible" : "hidden" }}
@@ -177,7 +127,6 @@ const PortfolioDetailsPrimary = ({ option }) => {
 					</div>
 					<div className="col-lg-4">
 						<aside className="tj-blog-sidebar">
-							{/* <!-- category --> */}
 							<div
 								className="tj-sidebar-widget wow fadeInUp"
 								data-wow-delay="0.1s"
@@ -188,49 +137,40 @@ const PortfolioDetailsPrimary = ({ option }) => {
 								<div className="project_catagory">
 									<ul>
 										<li>
-											<span className="first-child">Clients</span>
-											<span>Albert Buttler</span>
-										</li>
-										<li>
-											<span className="first-child">Portfolio</span>
-											<span>Financial</span>
+											<span className="first-child">Client</span>
+											<span>{client || "Client"}</span>
 										</li>
 										<li>
 											<span className="first-child">Service</span>
-											<span>Corporate</span>
+											<span>{service || "Custom Service"}</span>
 										</li>
 										<li>
 											<span className="first-child">Category</span>
-											<span>Marketing</span>
+											<span>{category || "Business Solutions"}</span>
 										</li>
 										<li>
 											<span className="first-child">Date</span>
-											<span>08 March 2023</span>
+											<span>{date || "Not specified"}</span>
 										</li>
 										<li>
 											<span className="first-child">Share</span>
 											<div className="share-socials">
-												<Link href="https://www.facebook.com/" title="Facebook">
-													<i className="fa-brands fa-facebook-f"></i>
-												</Link>
-												<Link href="https://x.com/" title="Twitter">
-													<i className="fab fa-x-twitter"></i>
-												</Link>
-												<Link href="https://www.linkedin.com/" title="Linkedin">
-													<i className="fa-brands fa-linkedin-in"></i>
-												</Link>
-												<Link
-													href="https://www.pinterest.com/"
-													title="Pinterest"
-												>
-													<i className="fa-brands fa-pinterest-p"></i>
-												</Link>
+												{(shareLinks || []).map((link, idx) => (
+													<Link
+														href={link.href}
+														target="_blank"
+														rel="noreferrer"
+														title={link.label}
+														key={idx}
+													>
+														<i className={`fa-brands ${link.icon}`}></i>
+													</Link>
+												))}
 											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
-							{/* <!-- cta --> */}
 							<div
 								className="tj-sidebar-widget wow fadeInUp"
 								data-wow-delay="0.1s"
