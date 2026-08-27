@@ -5,7 +5,7 @@ import getPortfolio from "@/libs/getPortfolio";
 import { useState } from "react";
 const Portfolios9 = () => {
 	const [currentIndex, setCurrentIndex] = useState(1);
-	const portfolio = getPortfolio()?.slice(0, 5);
+	const portfolio = getPortfolio()?.slice(0, 4);
 	const handleCurrentIndex = idx => {
 		setCurrentIndex(idx);
 	};

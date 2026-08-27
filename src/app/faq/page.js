@@ -6,6 +6,10 @@ import Faq3 from "@/components/sections/faq/Faq3";
 import HeroInner from "@/components/sections/heros/HeroInner";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("faq");
+
 export default function Faq() {
 	return (
 		<div>

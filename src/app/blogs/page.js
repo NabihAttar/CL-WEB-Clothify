@@ -4,6 +4,9 @@ import BlogMain from "@/components/layout/main/BlogMain";
 import Cta1 from "@/components/sections/cta/Cta1";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("blogs");
 
 export default function Blogs() {
 	return (

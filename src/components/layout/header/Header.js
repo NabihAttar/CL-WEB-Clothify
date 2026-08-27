@@ -4,11 +4,10 @@ import ButtonMenuToggler from "@/components/shared/buttons/ButtonMenuToggler";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import ButtonSearch from "@/components/shared/buttons/ButtonSearch";
 import useHeaderFunction from "@/hooks/useHeaderFunction";
-import HeaderTop from "./HeaderTop";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 
-const Header = ({ headerType, isHeaderTop, topbarType, isStickyHeader }) => {
+const Header = ({ headerType, isStickyHeader, isLightBackground }) => {
 	const isSticky = useHeaderFunction(isStickyHeader);
 	return (
 		<header
@@ -33,12 +32,13 @@ const Header = ({ headerType, isHeaderTop, topbarType, isStickyHeader }) => {
 			} ${
 				isStickyHeader
 					? "header-duplicate header-sticky"
+					: isLightBackground
+					? "header-light-bg"
 					: headerType === 9
 					? ""
 					: "header-absolute"
 			} ${isStickyHeader && isSticky ? "sticky" : ""}`}
 		>
-			{isHeaderTop && !isStickyHeader ? <HeaderTop type={topbarType} /> : ""}
 			<div className="header-bottom">
 				<div className="container-fluid">
 					<div className="row">

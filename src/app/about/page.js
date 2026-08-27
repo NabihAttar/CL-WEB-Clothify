@@ -19,6 +19,10 @@ import Cta4 from "@/components/sections/cta/Cta4";
 import Cta5 from "@/components/sections/cta/Cta5";
 import Cta6 from "@/components/sections/cta/Cta6";
 import Cta7 from "@/components/sections/cta/Cta7";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("about");
+
 export default function About() {
 	return (
 		<div>

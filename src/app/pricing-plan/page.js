@@ -5,6 +5,10 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import PricingPlan4 from "@/components/sections/pricing-plan/PricingPlan4";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("pricing");
+
 export default function PricingPlan() {
 	return (
 		<div>

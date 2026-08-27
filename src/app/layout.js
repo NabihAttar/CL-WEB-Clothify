@@ -1,6 +1,9 @@
 import HeaderSearchForm from "@/components/layout/header/HeaderSearchForm";
 import MobileMenu from "@/components/layout/header/MobileMenu";
+import CookieConsent from "@/components/shared/others/CookieConsent";
+import JsonLd from "@/components/shared/others/JsonLd";
 import SmoothScroller from "@/components/shared/others/SmoothScroller";
+import { createMetadata, siteConfig } from "@/lib/seo";
 import { Lato, Libre_Franklin } from "next/font/google";
 import "react-range-slider-input/dist/style.css";
 import "swiper/css";
@@ -19,8 +22,22 @@ import "./assets/css/odometer-theme-default.css";
 import "./assets/css/solvior-icons.css";
 import "./globals.css";
 export const metadata = {
-	title: "Solvior - Business Consulting React NextJs Template",
-	description: "Solvior - Business Consulting React NextJs Template",
+	metadataBase: new URL(siteConfig.url),
+	...createMetadata(),
+	applicationName: siteConfig.name,
+	authors: [{ name: siteConfig.name, url: siteConfig.url }],
+	creator: siteConfig.name,
+	publisher: siteConfig.name,
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false,
+	},
+	icons: {
+		icon: "/favicon.ico",
+		shortcut: "/favicon.ico",
+		apple: "/images/logos/header-logo.png",
+	},
 };
 
 const lato = Lato({
@@ -44,10 +61,12 @@ export default function RootLayout({ children }) {
 			className={`${lato.variable} ${libreFranklin.variable}`}
 		>
 			<body>
+				<JsonLd />
 				<HeaderSearchForm />
 				<MobileMenu />
 				{children}
 				<SmoothScroller />
+				<CookieConsent />
 			</body>
 		</html>
 	);

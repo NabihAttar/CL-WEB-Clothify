@@ -21,6 +21,10 @@ import Footer10 from "@/components/layout/footer/Footer10";
 import Contact1 from "@/components/sections/contacts/Contact1";
 import Contact3 from "@/components/sections/contacts/Contact3";
 import Cta7 from "@/components/sections/cta/Cta7";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("home");
+
 export default function Home() {
 	return (
 		<div>

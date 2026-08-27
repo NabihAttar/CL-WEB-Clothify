@@ -5,8 +5,27 @@ import Cta1 from "@/components/sections/cta/Cta1";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getPortfolio from "@/libs/getPortfolio";
+import { createMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getPortfolio();
+
+export async function generateMetadata({ params }) {
+	const { id } = await params;
+	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
+
+	if (!item) {
+		return createMetadata({ title: "Portfolio Not Found", noIndex: true });
+	}
+
+	return createMetadata({
+		title: item.title,
+		description: item.shortDesc || item.desc,
+		path: `/portfolios/${id}`,
+		image: item.imgLarge || item.img,
+		imageAlt: `${item.title} - Clothify portfolio project image`,
+	});
+}
+
 export default async function PortfolioDetails({ params }) {
 	const { id } = await params;
 
@@ -16,7 +35,7 @@ export default async function PortfolioDetails({ params }) {
 	}
 	return (
 		<div>
-			<Header isHeaderTop={true} />
+			<Header isHeaderTop={true} isLightBackground={true} />
 			<Header isStickyHeader={true} />
 			<main>
 				<PortfolioDetailsMain currentItemId={parseInt(id)} />

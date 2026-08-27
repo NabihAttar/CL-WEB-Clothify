@@ -5,8 +5,27 @@ import Cta1 from "@/components/sections/cta/Cta1";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getBlogs from "@/libs/getBlogs";
+import { createMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getBlogs();
+
+export async function generateMetadata({ params }) {
+	const { id } = await params;
+	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
+
+	if (!item) {
+		return createMetadata({ title: "Blog Post Not Found", noIndex: true });
+	}
+
+	return createMetadata({
+		title: item.title,
+		description: item.desc,
+		path: `/blogs/${id}`,
+		image: item.detailsImg || item.img1 || item.img,
+		imageAlt: `${item.title} - Clothify blog article image`,
+	});
+}
+
 export default async function BlogDetails({ params }) {
 	const { id } = await params;
 	const isExistItem = items?.find(({ id: id1 }) => id1 === parseInt(id));

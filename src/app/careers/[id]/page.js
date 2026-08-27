@@ -6,8 +6,26 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getCareers from "@/libs/getCareers";
+import { createMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getCareers();
+
+export async function generateMetadata({ params }) {
+	const { id } = await params;
+	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
+
+	if (!item) {
+		return createMetadata({ title: "Career Not Found", noIndex: true });
+	}
+
+	return createMetadata({
+		title: `${item.title} | Careers`,
+		description: `${item.title} career opportunity at Clothify in ${item.location}.`,
+		path: `/careers/${id}`,
+		imageAlt: `${item.title} career opportunity at Clothify`,
+	});
+}
+
 export default async function CareerDetails({ params }) {
 	const { id } = await params;
 

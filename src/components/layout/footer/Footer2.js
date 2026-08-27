@@ -11,7 +11,7 @@ const Footer2 = () => {
 							<div className="footer-widget footer2-col-1 footer-info">
 								<div className="footer-logo">
 									<Link href="/">
-										<img src="/images/logos/primary-logo.png" alt="solvior" />
+										<img src="/images/logos/header-logo.png" alt="Clothify logo - business consulting brand" />
 									</Link>
 								</div>
 								<p className="desc">

@@ -6,6 +6,10 @@ import Cta1 from "@/components/sections/cta/Cta1";
 import HeroInner from "@/components/sections/heros/HeroInner";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("contact");
+
 export default function Contact() {
 	return (
 		<div>

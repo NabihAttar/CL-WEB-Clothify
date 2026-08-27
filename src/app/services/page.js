@@ -15,6 +15,9 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import Brands3 from "@/components/sections/brands/Brands3";
 import Faq3 from "@/components/sections/faq/Faq3";
 import Cta7 from "@/components/sections/cta/Cta7";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("services");
 
 export default function Services() {
 	return (
