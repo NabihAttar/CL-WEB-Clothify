@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import CtaSidebar from "../cta/CtaSidebar";
+import PortfolioDetailsGallery from "./PortfolioDetailsGallery";
 
 const PortfolioDetailsPrimary = ({ option }) => {
 	const { prevId, nextId, currentItem, isPrevItem, isNextItem } = option || {};
@@ -10,6 +10,7 @@ const PortfolioDetailsPrimary = ({ option }) => {
 		title,
 		titleLarge,
 		imgLarge,
+		showcase,
 		client,
 		service,
 		category,
@@ -40,6 +41,24 @@ const PortfolioDetailsPrimary = ({ option }) => {
 			)
 	);
 
+	const desktopImage = showcase?.desktop || imgLarge;
+	const mobileImage = showcase?.mobile;
+	const galleryImages = showcase?.gallery || [];
+
+	const getShareIconClass = (icon) => {
+		if (!icon) return "fa-solid fa-link";
+		if (icon.includes(" ")) return icon;
+
+		const solidIcons = new Set([
+			"fa-globe",
+			"fa-link",
+			"fa-arrow-up-right-from-square",
+			"fa-earth-americas",
+		]);
+
+		return solidIcons.has(icon) ? `fa-solid ${icon}` : `fa-brands ${icon}`;
+	};
+
 	return (
 		<section className="portfolio-details portfolio-details--no-banner section-space">
 			<div className="container">
@@ -64,22 +83,11 @@ const PortfolioDetailsPrimary = ({ option }) => {
 							>
 								<div className="portfolio-details__hero-accent" />
 								<div className="portfolio-details__hero-frame">
-									<Image
-										src={
-											imgLarge
-												? imgLarge
-												: "/images/project/tj-project-1.webp"
-										}
-										alt={
-											title
-												? `${title} project preview`
-												: "Portfolio project preview"
-										}
-										width={870}
-										height={498}
-										className="portfolio-details__hero-img"
-										style={{ height: "auto", width: "100%" }}
-										priority
+									<PortfolioDetailsGallery
+										title={title}
+										desktopImage={desktopImage}
+										mobileImage={mobileImage}
+										galleryImages={galleryImages}
 									/>
 								</div>
 							</div>
@@ -263,7 +271,7 @@ const PortfolioDetailsPrimary = ({ option }) => {
 													key={idx}
 													className="portfolio-details__share-btn"
 												>
-													<i className={`fa-brands ${link.icon}`}></i>
+													<i className={getShareIconClass(link.icon)}></i>
 												</Link>
 											))}
 										</div>

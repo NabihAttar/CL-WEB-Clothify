@@ -344,6 +344,81 @@
 	background: #ffffff;
 }
 
+.portfolio-details__showcase-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.portfolio-details__showcase {
+	position: relative;
+	--showcase-phone-width: 200px;
+	--showcase-phone-offset: 24px;
+}
+
+.portfolio-details__showcase-desktop {
+	position: relative;
+	aspect-ratio: 1448 / 1086;
+	overflow: hidden;
+	border-radius: 14px;
+	background: #f4f7ef;
+}
+
+.portfolio-details__showcase-desktop-img {
+	object-fit: cover;
+	object-position: center top;
+}
+
+.portfolio-details__showcase-mobile {
+	position: absolute;
+	right: var(--showcase-phone-offset);
+	bottom: var(--showcase-phone-offset);
+	width: var(--showcase-phone-width);
+	z-index: 2;
+}
+
+.portfolio-details__phone {
+	filter: drop-shadow(0 16px 32px rgba(5, 18, 41, 0.24));
+}
+
+.portfolio-details__phone-shell {
+	padding: 9px;
+	border-radius: 26px;
+	background: linear-gradient(160deg, #222833 0%, #0b0f15 100%);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-details__phone-screen {
+	position: relative;
+	aspect-ratio: 9 / 19.5;
+	border-radius: 18px;
+	overflow: hidden;
+	background: #000000;
+}
+
+.portfolio-details__phone-img {
+	object-fit: cover;
+	object-position: center top;
+}
+
+.portfolio-details__gallery {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px;
+}
+
+.portfolio-details__gallery-item {
+	overflow: hidden;
+	border-radius: 14px;
+	position: relative;
+	aspect-ratio: 16 / 10;
+	background: #f4f7ef;
+}
+
+.portfolio-details__gallery-img {
+	object-fit: cover;
+}
+
 .portfolio-details__hero-img {
 	border-radius: 14px;
 	object-fit: cover;
@@ -595,6 +670,28 @@
 @media (max-width: 991px) {
 	.portfolio-details__sidebar {
 		position: static;
+	}
+
+	.portfolio-details__showcase--dual {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 22px;
+	}
+
+	.portfolio-details__showcase-mobile {
+		position: static;
+		width: min(240px, 72vw);
+		min-width: 0;
+		max-width: 240px;
+	}
+
+	.portfolio-details__showcase--dual {
+		--showcase-phone-width: min(240px, 72vw);
+	}
+
+	.portfolio-details__showcase-desktop {
+		width: 100%;
 	}
 }
 
