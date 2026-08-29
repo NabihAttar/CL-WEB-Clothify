@@ -7,7 +7,7 @@ import TeamDetails1 from "@/components/sections/teams/TeamDetails1";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getTeamMembers from "@/libs/getTeamMembers";
-import { createMetadata } from "@/lib/seo";
+import { createTeamMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getTeamMembers();
 
@@ -16,16 +16,10 @@ export async function generateMetadata({ params }) {
 	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
 
 	if (!item) {
-		return createMetadata({ title: "Team Member Not Found", noIndex: true });
+		return createTeamMetadata(null, id);
 	}
 
-	return createMetadata({
-		title: `${item.name} | Team`,
-		description: `${item.name} - ${item.desig} at Clothify.`,
-		path: `/team/${id}`,
-		image: item.imgLarge || item.img,
-		imageAlt: `${item.name}, ${item.desig} at Clothify`,
-	});
+	return createTeamMetadata(item, id);
 }
 
 export default async function TeamDetails({ params }) {

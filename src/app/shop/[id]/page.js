@@ -7,8 +7,28 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import CartContextProvider from "@/context_api/CartContext";
 import WishlistContextProvider from "@/context_api/WshlistContext";
 import getProducts from "@/libs/getProducts";
+import { createMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getProducts();
+
+export async function generateMetadata({ params }) {
+	const { id } = await params;
+	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
+
+	if (!item) {
+		return createMetadata({ title: "Product Not Found", noIndex: true });
+	}
+
+	return createMetadata({
+		title: `${item.title} | Clothify Shop`,
+		description: `View ${item.title} in the Clothify demo shop.`,
+		path: `/shop/${id}`,
+		image: item.img,
+		imageAlt: `${item.title} product image`,
+		noIndex: true,
+	});
+}
+
 export default async function ProductDetails({ params }) {
 	const { id } = await params;
 	const isExistItem = items?.find(({ id: id1 }) => id1 === parseInt(id));

@@ -5,6 +5,9 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import PasswordPrimary from "@/components/sections/registration/PasswordPrimary";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("password");
 export default function password() {
 	return (
 		<div>

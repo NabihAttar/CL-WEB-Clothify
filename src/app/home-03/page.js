@@ -13,6 +13,9 @@ import Testimonials3 from "@/components/sections/testimonials/Testimonials3";
 import FeatureMarquee from "@/components/shared/marquee/FeatureMarquee";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("home03");
 
 export default function Home3() {
 	return (

@@ -5,6 +5,13 @@ import ErrorPrimary from "@/components/sections/error/ErrorPrimary";
 import HeroInner from "@/components/sections/heros/HeroInner";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+	title: "Page Not Found | Clothify",
+	description: "The page you are looking for could not be found on Clothify.",
+	noIndex: true,
+});
 
 export default function Notfound() {
 	return (

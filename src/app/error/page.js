@@ -5,6 +5,10 @@ import ErrorPrimary from "@/components/sections/error/ErrorPrimary";
 import HeroInner from "@/components/sections/heros/HeroInner";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("error");
+
 export default function ErrorCustom() {
 	return (
 		<div>

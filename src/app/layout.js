@@ -1,10 +1,10 @@
+import { siteConfig } from "@/lib/seo";
+import { Lato, Libre_Franklin } from "next/font/google";
 import HeaderSearchForm from "@/components/layout/header/HeaderSearchForm";
 import MobileMenu from "@/components/layout/header/MobileMenu";
 import CookieConsent from "@/components/shared/others/CookieConsent";
 import JsonLd from "@/components/shared/others/JsonLd";
 import SmoothScroller from "@/components/shared/others/SmoothScroller";
-import { createMetadata, siteConfig } from "@/lib/seo";
-import { Lato, Libre_Franklin } from "next/font/google";
 import "react-range-slider-input/dist/style.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -21,9 +21,43 @@ import "./assets/css/meanmenu.css";
 import "./assets/css/odometer-theme-default.css";
 import "./assets/css/solvior-icons.css";
 import "./globals.css";
+
 export const metadata = {
 	metadataBase: new URL(siteConfig.url),
-	...createMetadata(),
+	title: {
+		default: siteConfig.title,
+	},
+	description: siteConfig.description,
+	alternates: {
+		canonical: "/",
+	},
+	openGraph: {
+		type: "website",
+		locale: siteConfig.locale,
+		url: "/",
+		siteName: siteConfig.name,
+		title: siteConfig.title,
+		description: siteConfig.description,
+		images: [
+			{
+				url: siteConfig.ogImage,
+				width: siteConfig.ogImageWidth,
+				height: siteConfig.ogImageHeight,
+				alt: siteConfig.ogImageAlt,
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: siteConfig.title,
+		description: siteConfig.description,
+		images: [
+			{
+				url: siteConfig.ogImage,
+				alt: siteConfig.ogImageAlt,
+			},
+		],
+	},
 	applicationName: siteConfig.name,
 	authors: [{ name: siteConfig.name, url: siteConfig.url }],
 	creator: siteConfig.name,
@@ -44,7 +78,7 @@ const lato = Lato({
 	subsets: ["latin"],
 	weight: ["100", "300", "400", "700", "900"],
 	style: ["normal", "italic"],
-	variable: "--font-lato", // optional: set a CSS variable
+	variable: "--font-lato",
 });
 
 const libreFranklin = Libre_Franklin({
@@ -53,6 +87,7 @@ const libreFranklin = Libre_Franklin({
 	style: ["normal", "italic"],
 	variable: "--font-libre-franklin",
 });
+
 export default function RootLayout({ children }) {
 	return (
 		<html

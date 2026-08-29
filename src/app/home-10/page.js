@@ -14,6 +14,9 @@ import Video from "@/components/sections/videos/Video";
 import FeatureMarquee from "@/components/shared/marquee/FeatureMarquee";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("home10");
 export default function Home10() {
 	return (
 		<div>

@@ -14,6 +14,9 @@ import Testimonials8 from "@/components/sections/testimonials/Testimonials8";
 import FeatureMarquee from "@/components/shared/marquee/FeatureMarquee";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("home09");
 export default function Home9() {
 	return (
 		<div>

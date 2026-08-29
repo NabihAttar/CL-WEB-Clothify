@@ -5,7 +5,7 @@ import Cta1 from "@/components/sections/cta/Cta1";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getALlServices from "@/libs/getALlServices";
-import { createMetadata } from "@/lib/seo";
+import { createServiceMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getALlServices();
 
@@ -14,16 +14,10 @@ export async function generateMetadata({ params }) {
 	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
 
 	if (!item) {
-		return createMetadata({ title: "Service Not Found", noIndex: true });
+		return createServiceMetadata(null, id);
 	}
 
-	return createMetadata({
-		title: item.title,
-		description: item.shortDesc || item.desc,
-		path: `/services/${id}`,
-		image: item.img || item.bgImg,
-		imageAlt: `${item.title} - Clothify service image`,
-	});
+	return createServiceMetadata(item, id);
 }
 
 export default async function ServiceDetails({ params }) {

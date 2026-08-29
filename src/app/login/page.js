@@ -5,6 +5,10 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import LoginPrimary from "@/components/sections/registration/LoginPrimary";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("login");
+
 export default function Login() {
 	return (
 		<div>

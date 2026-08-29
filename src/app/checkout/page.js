@@ -6,6 +6,10 @@ import HeroInner from "@/components/sections/heros/HeroInner";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import CartContextProvider from "@/context_api/CartContext";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("checkout");
+
 export default function Checkout() {
 	return (
 		<div className="ecommerce">

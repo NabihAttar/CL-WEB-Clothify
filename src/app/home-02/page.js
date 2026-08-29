@@ -13,6 +13,9 @@ import Team1 from "@/components/sections/teams/Team1";
 import Testimonials2 from "@/components/sections/testimonials/Testimonials2";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata("home02");
 
 export default function Home2() {
 	return (

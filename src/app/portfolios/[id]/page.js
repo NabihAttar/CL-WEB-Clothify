@@ -5,7 +5,7 @@ import Cta1 from "@/components/sections/cta/Cta1";
 import TjMagicCursor from "@/components/shared/others/TjMagicCursor";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 import getPortfolio from "@/libs/getPortfolio";
-import { createMetadata } from "@/lib/seo";
+import { createPortfolioMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getPortfolio();
 
@@ -14,16 +14,10 @@ export async function generateMetadata({ params }) {
 	const item = items?.find(({ id: itemId }) => itemId === parseInt(id));
 
 	if (!item) {
-		return createMetadata({ title: "Portfolio Not Found", noIndex: true });
+		return createPortfolioMetadata({ title: "Project Not Found" }, id);
 	}
 
-	return createMetadata({
-		title: item.title,
-		description: item.shortDesc || item.desc,
-		path: `/portfolios/${id}`,
-		image: item.imgLarge || item.img,
-		imageAlt: `${item.title} - Clothify portfolio project image`,
-	});
+	return createPortfolioMetadata(item, id);
 }
 
 export default async function PortfolioDetails({ params }) {

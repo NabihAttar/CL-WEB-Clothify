@@ -178,7 +178,7 @@ const ClothifyFooter = ({ showCta = false }) => {
 					<div className="clothify-footer__bottom-inner">
 						<p>© {currentYear} Clothify. All rights reserved.</p>
 						<div className="clothify-footer__legal">
-							<Link href="/contact">Privacy Policy</Link>
+							<Link href="/privacy">Privacy Policy</Link>
 							<Link href="/contact">Terms & Conditions</Link>
 						</div>
 					</div>
