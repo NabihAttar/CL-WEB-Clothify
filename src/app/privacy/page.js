@@ -14,7 +14,11 @@ export default function Privacy() {
 			<Header isHeaderTop={true} />
 			<Header isStickyHeader={true} />
 			<main>
-				<HeroInner title="Privacy Policy" text="Privacy Policy" />
+				<HeroInner
+					title="Privacy Policy"
+					text="Privacy Policy"
+					heroImage="/new-images/Privacy-Page/PrivacyPage-heroSection.png"
+				/>
 				<section className="section-space">
 					<div className="container">
 						<div className="row justify-content-center">

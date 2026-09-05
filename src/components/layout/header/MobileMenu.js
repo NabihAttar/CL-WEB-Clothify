@@ -10,7 +10,7 @@ const MobileMenu = () => {
 					<div className="hamburger_top d-flex align-items-center justify-content-between">
 						<div className="hamburger_logo">
 							<Link href="/" className="mobile_logo">
-								<img src="/images/logos/clothify-logo-green.png" alt="Clothify logo" className="header-logo-img" />
+									<img src="/new-images/Clothify-Logo/clothify_logo_header.svg" alt="Clothify logo" className="header-logo-img" />
 							</Link>
 						</div>
 						<div className="hamburger_close">

@@ -7,7 +7,7 @@ const Logo = () => {
 		<div className="site-logo">
 			<Link className="logo" href="/">
 				<img
-					src="/images/logos/clothify-logo-green.png"
+					src="/new-images/Clothify-Logo/clothify_logo_header.svg"
 					alt="Clothify logo - business consulting brand"
 					className="header-logo-img"
 					height={44}

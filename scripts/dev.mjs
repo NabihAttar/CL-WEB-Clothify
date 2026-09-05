@@ -14,24 +14,17 @@ function stopExistingDevServers() {
 		return;
 	}
 
+	const projectName = path.basename(projectRoot).toLowerCase();
+
 	for (const port of [3000, 3001, 3002]) {
 		try {
 			execSync(
-				`powershell -NoProfile -Command "Get-NetTCPConnection -LocalPort ${port} -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }"`,
+				`powershell -NoProfile -Command "$procs = Get-NetTCPConnection -LocalPort ${port} -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique; foreach ($pid in $procs) { $cmd = (Get-CimInstance Win32_Process -Filter \"ProcessId = $pid\" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty CommandLine); if (-not $cmd) { continue }; $cmdLower = $cmd.ToLower(); if ($cmdLower.Contains('node_modules\\next') -or $cmdLower.Contains('next dev') -or $cmdLower.Contains('${projectName}')) { Stop-Process -Id $pid -Force -ErrorAction SilentlyContinue } }"`,
 				{ stdio: "ignore" }
 			);
 		} catch {
-			// Port is free.
+			// Port is free or no matching server was found.
 		}
-	}
-
-	try {
-		execSync(
-			'powershell -NoProfile -Command "Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue"',
-			{ stdio: "ignore" }
-		);
-	} catch {
-		// Ignore if no node processes are running.
 	}
 }
 

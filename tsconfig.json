@@ -34,9 +34,13 @@
     "**/*.tsx",
     "../../../../../AppData/Local/clothify-solvior-next-1788013179758/types/**/*.ts",
     ".next-1788013382188/types/**/*.ts",
+    ".next-1788013650972/types/**/*.ts",
+    ".next-1788035528434/types/**/*.ts",
+    ".next-1788388431238/types/**/*.ts",
+    ".next-1788389268781/types/**/*.ts",
     ".next/types/**/*.ts",
     "next-env.d.ts",
-    ".next-1788013650972/types/**/*.ts"
+    ".next-1788643180314/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
