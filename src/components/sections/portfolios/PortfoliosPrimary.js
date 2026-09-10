@@ -6,7 +6,7 @@ import usePagination from "@/hooks/usePagination";
 import getPortfolio from "@/libs/getPortfolio";
 
 const PortfoliosPrimary = () => {
-	const items = getPortfolio()?.slice(0, -1);
+	const items = getPortfolio();
 	const limit = 6;
 	const {
 		currentItems,
@@ -60,7 +60,7 @@ const PortfoliosPrimary = () => {
 						? currentItems.map((item, idx) => (
 								<div
 									key={item.id ?? idx}
-									className="col-xl-4 col-md-6"
+									className="col-xl-3 col-md-6"
 									data-wow-delay={`${0.1 + idx * 0.05}s`}
 								>
 									<PortfolioCard1 portfolio={item} variant="page" />

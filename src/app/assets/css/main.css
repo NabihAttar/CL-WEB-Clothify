@@ -11550,6 +11550,17 @@ blockquote cite::before {
 .tj-evolute-counter .counter-item .number {
   font-size: 48px;
 }
+@media (min-width: 992px) {
+  .tj-evolute-counter .counter-item:nth-child(2) .number {
+    min-width: 125px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .tj-evolute-counter .counter-item:nth-child(2) .number .odometer {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-evolute-counter .counter-item .number {
     font-size: 36px;
@@ -11875,6 +11886,15 @@ blockquote cite::before {
   padding: 40px 30px 45px;
   position: relative;
   z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+.tj-service-slider .swiper-wrapper {
+  align-items: stretch;
+}
+.tj-service-slider .swiper-slide {
+  height: auto;
+  display: flex;
 }
 .service-style-2 .thumb {
   position: absolute;
@@ -11967,8 +11987,8 @@ blockquote cite::before {
   color: var(--tj-color-heading-primary);
 }
 .service-style-2:hover .thumb {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 .service-style-2:hover .service-icon {
   opacity: 0;
@@ -11980,7 +12000,7 @@ blockquote cite::before {
   -webkit-animation: wobble-horizontal-hover 1s ease-in-out 1;
           animation: wobble-horizontal-hover 1s ease-in-out 1;
 }
-.service-style-2:hover .service-content .title a {
+.service-style-2:hover .service-content .title {
   color: var(--tj-color-common-white);
 }
 .service-style-2:hover .service-content .desc {
@@ -12009,6 +12029,10 @@ blockquote cite::before {
 @media (max-width: 575px) {
   .service-style-2 {
     padding: 30px 15px 35px;
+  }
+  .service-style-2 .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .service-style-2 .service-icon {
     width: 80px;
@@ -15284,6 +15308,11 @@ blockquote cite::before {
   backdrop-filter: none;
   border: 1px solid var(--tj-color-border-2);
 }
+.contact-form-layout .contact-form-one.style-2 {
+  max-width: 100%;
+  padding: 55px 60px;
+  box-shadow: 0 18px 45px rgba(5, 18, 41, 0.06);
+}
 .contact-form-one.style-2 .title {
   color: var(--tj-color-heading-primary);
 }
@@ -15356,6 +15385,9 @@ blockquote cite::before {
   padding: 40px;
   border: 1px solid var(--tj-color-border-2);
   text-align: center;
+}
+.contact-info-grid .contact-item.style-2 {
+  height: 100%;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-item.style-2 {

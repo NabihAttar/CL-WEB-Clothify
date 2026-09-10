@@ -63,7 +63,7 @@ const Footer9 = () => {
 											<Link href="/contact">Contact us</Link>
 										</li>
 										<li>
-											<Link href="/contact">Privacy policy</Link>
+											<Link href="/privacy">Privacy policy</Link>
 										</li>
 										<li>
 											<Link href="/about">Recognitions</Link>

@@ -14,7 +14,7 @@ const Cta1 = () => {
 							<div className="cta-button wow fadeInUp" data-wow-delay="0.1s">
 								<ButtonPrimary
 									text={"Lets talk now"}
-									url={"/contact"}
+									url={"https://wa.me/96176158980"}
 									className="white-btn"
 								/>
 							</div>

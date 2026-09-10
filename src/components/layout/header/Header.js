@@ -1,8 +1,6 @@
 "use client";
-import ButtonHeaderContact from "@/components/shared/buttons/ButtonHeaderContact";
 import ButtonMenuToggler from "@/components/shared/buttons/ButtonMenuToggler";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import ButtonSearch from "@/components/shared/buttons/ButtonSearch";
 import useHeaderFunction from "@/hooks/useHeaderFunction";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
@@ -60,18 +58,6 @@ const Header = ({ headerType, isStickyHeader, isLightBackground }) => {
 											: "d-lg-inline-flex"
 									}`}
 								>
-									{/* <!-- contact --> */}
-									{headerType === 2 || headerType === 9 ? (
-										<ButtonHeaderContact type={headerType === 9 ? 2 : 0} />
-									) : (
-										""
-									)}
-									{/* <!-- search btn --> */}
-									{headerType === 7 || headerType === 10 ? (
-										""
-									) : (
-										<ButtonSearch headerType={headerType} />
-									)}
 									{/* <!-- button --> */}
 									{headerType === 2 ||
 									headerType === 3 ||
@@ -86,7 +72,7 @@ const Header = ({ headerType, isStickyHeader, isLightBackground }) => {
 											text={
 												headerType === 8 ? "Free consultation" : "Get a quote"
 											}
-											url={"/contact"}
+											url={"https://wa.me/96176158980"}
 											className={
 												(headerType === 3 ||
 													headerType == 4 ||
@@ -103,11 +89,6 @@ const Header = ({ headerType, isStickyHeader, isLightBackground }) => {
 									) : (
 										""
 									)}{" "}
-									{headerType === 7 || headerType === 7 || headerType === 10 ? (
-										<ButtonSearch headerType={headerType} />
-									) : (
-										""
-									)}
 									{headerType === 7 || headerType === 10 ? (
 										<ButtonMenuToggler headerType={headerType} type={2} />
 									) : (

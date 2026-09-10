@@ -207,10 +207,7 @@ const Footer6 = () => {
 								<div className="copyright-menu">
 									<ul>
 										<li>
-											<Link href="/contact">Policy & privacy</Link>
-										</li>
-										<li>
-											<Link href="/contact">Terms & conditions</Link>
+														<Link href="/privacy">Policy & privacy</Link>
 										</li>
 									</ul>
 								</div>

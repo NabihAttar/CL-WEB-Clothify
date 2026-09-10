@@ -1,10 +1,8 @@
 import modifyNumber from "@/libs/modifyNumber";
 import Image from "next/image";
-import Link from "next/link";
 
 const ServiceCard2 = ({ service, idx, lastItem }) => {
-	const { title, desc, id, iconName, icon: Icon, bgImg } = service || {};
-	const serviceLink = `/services/${id}`;
+	const { title, desc, iconName, icon: Icon, bgImg } = service || {};
 	return (
 		<div className="service-style-2">
 			<div className="service-icon">
@@ -13,14 +11,11 @@ const ServiceCard2 = ({ service, idx, lastItem }) => {
 			<div className="service-content">
 				<span className="number">{modifyNumber(idx + 1)}</span>
 				<h4 className="title">
-					<Link href={serviceLink}>{title}</Link>
+					{title}
 				</h4>
 				<div className="desc">
 					<p>{desc}</p>
 				</div>
-				<Link className="service-button text-btn" href={serviceLink}>
-					Learn more <i className="tji-arrow-right"></i>
-				</Link>
 			</div>
 			<div className="thumb">
 				<Image

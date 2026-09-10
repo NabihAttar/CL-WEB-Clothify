@@ -55,7 +55,21 @@ const Funfact3 = () => {
 								height={650}
 								style={{ height: "auto" }}
 							/>
-							
+							<div className="about-video-box style-2">
+								<div className="video-box">
+									<PopupVideo>
+										<Link
+											className="circle glightbox video-popup"
+											href="/promo-video/0906(1)/0906(1).mp4"
+											data-type="video"
+											data-poster="/promo-video/0906(1)/0906(1)-Cover.jpg"
+										>
+											<i className="fa-sharp fa-solid fa-play"></i>
+										</Link>
+									</PopupVideo>
+								</div>
+								<span className="sub-title">Click for watch</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -106,14 +120,15 @@ const Funfact3 = () => {
 									<PopupVideo>
 										<Link
 											className="circle glightbox video-popup"
-											href="https://www.youtube.com/watch?v=GGf1JjSAKP4"
+											href="/promo-video/0906(1)/0906(1).mp4"
+											data-type="video"
+											data-poster="/promo-video/0906(1)/0906(1)-Cover.jpg"
 										>
 											<i className="fa-sharp fa-solid fa-play"></i>
 										</Link>
 									</PopupVideo>
 								</div>
 								<span className="sub-title">Click for watch</span>
-								<h5 className="title">See our latest video</h5>
 							</div>
 						</div>
 					</div>

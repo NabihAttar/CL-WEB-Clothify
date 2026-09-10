@@ -34,13 +34,13 @@ export default function About() {
 				<Features type={2} />
 				<Funfact3 />
 				{/* <Features7 /> */}
-				<Team7 />
+				<Team7 useAboutImages />
 
 				{/* <Team8 /> */}
 				<Skills1 />
 				{/* <Testimonials2 type={3} /> */}
 				{/* <Brands1 /> */}
-				<Cta7 />
+				<Cta7 hideIcon contactHref="/contact" />
 			</main>
 			<Footer footerType={"inner"} />
 			<ClientWrapper />

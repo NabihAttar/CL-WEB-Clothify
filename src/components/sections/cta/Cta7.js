@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Cta7 = () => {
+const Cta7 = ({ hideIcon = false, contactHref = "mailto:support@solvior.com" }) => {
 	return (
 		<section className="h8-cta-section">
 			<div className="thumb">
@@ -10,12 +10,14 @@ const Cta7 = () => {
 				<div className="row">
 					<div className="col-12">
 						<div className="h8-cta-wrapper">
-							<div className="h8-cta-icon">
-								<i className="tji-brand"></i>
-							</div>
+							{!hideIcon && (
+								<div className="h8-cta-icon">
+									<i className="tji-brand"></i>
+								</div>
+							)}
 							<h2 className="sec-title text-anim">
 								NEED MORE HELP?{" "}
-								<Link className="line-hover" href="mailto:support@solvior.com">
+								<Link className="line-hover" href={contactHref}>
 									CONTACT US
 								</Link>
 							</h2>

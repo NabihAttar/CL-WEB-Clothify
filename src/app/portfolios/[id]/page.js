@@ -8,6 +8,7 @@ import getPortfolio from "@/libs/getPortfolio";
 import { createPortfolioMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 const items = getPortfolio();
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }) {
 	const { id } = await params;

@@ -206,20 +206,17 @@ const PortfolioDetailsPrimary = ({ option }) => {
 									<i className="tji-square-cube"></i>
 								</Link>
 
-								<div
-									className="portfolio-details__nav-item portfolio-details__nav-item--next"
-									style={{
-										visibility: isNextItem ? "visible" : "hidden",
-									}}
-								>
-									<Link
-										href={isNextItem ? `/portfolios/${nextId}` : "#"}
-										className="portfolio-details__nav-link"
-									>
-										<span>Next project</span>
-										<i className="tji-arrow-right"></i>
-									</Link>
-								</div>
+								{isNextItem ? (
+									<div className="portfolio-details__nav-item portfolio-details__nav-item--next">
+										<Link
+											href={`/portfolios/${nextId}`}
+											className="portfolio-details__nav-link"
+										>
+											<span>Next project</span>
+											<i className="tji-arrow-right"></i>
+										</Link>
+									</div>
+								) : null}
 							</div>
 						</div>
 					</div>

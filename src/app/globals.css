@@ -8,6 +8,12 @@
 @import url("./assets/css/main.css");
 @import url("./assets/css/shop.css");
 
+.footer-social,
+.copyright-socails,
+.clothify-footer__social {
+	display: none !important;
+}
+
 .cookie-consent {
 	position: fixed;
 	inset-inline: 0;

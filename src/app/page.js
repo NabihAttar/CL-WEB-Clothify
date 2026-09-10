@@ -43,7 +43,7 @@ export default function Home() {
 				<FeatureMarquee />
 
 				<Contact3 />
-				<Cta7 />
+				<Cta7 hideIcon contactHref="https://wa.me/96176158980" />
 			</main>
 			<Footer10 />
 			<ClientWrapper />

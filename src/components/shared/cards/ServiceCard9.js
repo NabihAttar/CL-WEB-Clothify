@@ -29,7 +29,7 @@ const ServiceCard9 = ({ service, idx, lastItem }) => {
 					</div>
 				</div>
 			</div>
-			<Link className="service-btn" href={`/services/${id}`}>
+			<Link className="service-btn" href="/services">
 				<span className=" text-btn">
 					Learn more <i className="tji-angle-right"></i>
 				</span>

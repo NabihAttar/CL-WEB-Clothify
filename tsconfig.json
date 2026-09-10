@@ -38,9 +38,11 @@
     ".next-1788035528434/types/**/*.ts",
     ".next-1788388431238/types/**/*.ts",
     ".next-1788389268781/types/**/*.ts",
+    ".next-1788643180314/types/**/*.ts",
+    ".next-1788689226209/types/**/*.ts",
     ".next/types/**/*.ts",
     "next-env.d.ts",
-    ".next-1788643180314/types/**/*.ts"
+    ".next-1789055994189/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

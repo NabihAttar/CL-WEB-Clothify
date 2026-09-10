@@ -19,20 +19,6 @@ const MobileMenu = () => {
 							</button>
 						</div>
 					</div>
-					<div className="hamburger_search">
-						<form method="get" action="#0">
-							<button type="submit">
-								<i className="fal fa-search"></i>
-							</button>
-							<input
-								type="search"
-								autoComplete="off"
-								name="s"
-								placeholder="Search here"
-							/>
-						</form>
-					</div>
-
 					<div className="hamburger_menu">
 						<div className="mobile_menu"></div>
 					</div>

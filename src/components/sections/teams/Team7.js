@@ -3,7 +3,13 @@ import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import TeamCard7 from "@/components/shared/cards/TeamCard7";
 import { useState } from "react";
 
-const Team7 = () => {
+const Team7 = ({ useAboutImages = false }) => {
+	const aboutImages = [
+		"/new-images/About-Page/AboutPage-OurCoreServices-Web.png",
+		"/new-images/About-Page/AboutPage-OurCoreServices-Pos.png",
+		"/new-images/About-Page/AboutPage-OurCoreServices-Erp.png",
+		"/new-images/About-Page/AboutPage-OurCoreServices-Mobile.png",
+	];
 	const teamMembers = [
 		{
 			id: 1,
@@ -11,7 +17,7 @@ const Team7 = () => {
 			desig: "Custom Websites",
 			desc: "We create modern, responsive, and SEO-friendly websites that help businesses build a strong online presence and deliver a better user experience.",
 			label: "Web Development",
-			img: "/images/header/demo/home-7.webp",
+			img: useAboutImages ? aboutImages[0] : "/images/header/demo/home-7.webp",
 		},
 		{
 			id: 2,
@@ -19,7 +25,7 @@ const Team7 = () => {
 			desig: "Smart Sales Solutions",
 			desc: "Our POS systems help businesses manage sales, payments, inventory, and reports with speed, accuracy, and efficiency.",
 			label: "POS Systems",
-			img: "/images/header/demo/home-8.webp",
+			img: useAboutImages ? aboutImages[1] : "/images/header/demo/home-8.webp",
 		},
 		{
 			id: 3,
@@ -27,7 +33,7 @@ const Team7 = () => {
 			desig: "Business Management",
 			desc: "We build ERP solutions that connect operations, finance, inventory, and workflows into one organized system for better control and productivity.",
 			label: "ERP Systems",
-			img: "/images/header/demo/home-9.webp",
+			img: useAboutImages ? aboutImages[2] : "/images/header/demo/home-9.webp",
 		},
 		{
 			id: 4,
@@ -35,7 +41,7 @@ const Team7 = () => {
 			desig: "iOS & Android Apps",
 			desc: "We develop user-friendly mobile applications that help businesses engage customers, improve accessibility, and support growth on the go.",
 			label: "Mobile Apps",
-			img: "/images/header/demo/home-10.webp",
+			img: useAboutImages ? aboutImages[3] : "/images/header/demo/home-10.webp",
 		},
 	];
 	const [currentIndex, setCurrentIndex] = useState(0);

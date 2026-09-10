@@ -39,7 +39,7 @@ export default function Services() {
 
 				<Faq3 />
 
-				<Cta7 />
+				<Cta7 hideIcon contactHref="https://wa.me/96176158980" />
 			</main>
 
 			<Footer footerType="inner" />

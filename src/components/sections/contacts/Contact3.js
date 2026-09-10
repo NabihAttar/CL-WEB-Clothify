@@ -1,5 +1,4 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import FormSelect from "@/components/shared/Inputs/FormSelect";
 import Link from "next/link";
 
 const Contact3 = () => {
@@ -36,39 +35,27 @@ const Contact3 = () => {
 						{/* <!-- right --> */}
 						<div className="col-12 col-lg-7 ">
 							<form
-								action="#0"
+								action="https://formsubmit.co/info@clothify-leb.com"
+								method="POST"
 								className="contact-team-details__form wow fadeInUp"
 								data-wow-delay="0.7s"
 							>
+								<input type="hidden" name="_subject" value="New Clothify contact request" />
+								<input type="hidden" name="_captcha" value="false" />
+								<input type="hidden" name="_template" value="table" />
 								<div className="tj-input__wrapper">
-									<input className="tj-input" placeholder="Full Name*" />
+									<input className="tj-input" name="name" placeholder="Full Name*" required />
 								</div>
 								<div className="tj-input__wrapper">
-									<input className="tj-input" placeholder="Email Address*" />
+									<input className="tj-input" type="email" name="email" placeholder="Email Address*" required />
 								</div>
 								<div className="tj-input__wrapper">
-									<input className="tj-input" placeholder="Phone Number*" />
-								</div>
-								<div className="tj-input__wrapper">
-									<FormSelect
-										id={"contact"}
-										className="nice-select tj-nice-select tj-input"
-										defaultValue={"Choose a Service"}
-										items={[
-											{ value: "1", name: "Choose a Service" },
-											{ value: "2", name: "Website Development" },
-											{ value: "3", name: "Mobile App Development" },
-											{ value: "4", name: "ERP System" },
-											{ value: "5", name: "POS System" },
-											{ value: "6", name: "Desktop Application" },
-											{ value: "7", name: "Business Automation" },
-											{ value: "8", name: "Other" },
-										]}
-									/>
+									<input className="tj-input" type="tel" name="phone" placeholder="Phone Number*" required />
 								</div>
 								<div className="tj-input__wrapper tj-input__wrapper--message">
 									<textarea
 										className="tj-input"
+										name="message"
 										placeholder="Type your message"
 										rows="6"
 									/>

@@ -100,7 +100,7 @@ const Footer7 = () => {
 											<Link href="/contact">Contact us</Link>
 										</li>
 										<li>
-											<Link href="/contact">Privacy policy</Link>
+											<Link href="/privacy">Privacy policy</Link>
 										</li>
 										<li>
 											<Link href="/about">Recognitions</Link>
@@ -194,10 +194,7 @@ const Footer7 = () => {
 								<div className="copyright-menu">
 									<ul>
 										<li>
-											<Link href="/contact">Policy & privacy</Link>
-										</li>
-										<li>
-											<Link href="/contact">Terms & conditions</Link>
+														<Link href="/privacy">Policy & privacy</Link>
 										</li>
 									</ul>
 								</div>

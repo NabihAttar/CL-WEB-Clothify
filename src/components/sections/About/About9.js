@@ -52,7 +52,7 @@ const About9 = () => {
 									</div>
 								</div>
 								<div className="btn-area wow fadeInUp" data-wow-delay="0.6s">
-									<ButtonPrimary text="Know More About Us" href="/about" />
+									<ButtonPrimary text="Know More About Us" url="/about" />
 								</div>
 							</div>
 						</div>
