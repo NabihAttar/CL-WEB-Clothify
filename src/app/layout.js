@@ -68,9 +68,11 @@ export const metadata = {
 		telephone: false,
 	},
 	icons: {
-		icon: "/favicon.ico",
-		shortcut: "/favicon.ico",
-		apple: "/images/logos/header-logo.png",
+		icon: [
+			{ url: "/favicon.svg", type: "image/svg+xml" },
+			{ url: "/favicon.ico", sizes: "any" },
+		],
+		apple: "/apple-touch-icon.png",
 	},
 };
 

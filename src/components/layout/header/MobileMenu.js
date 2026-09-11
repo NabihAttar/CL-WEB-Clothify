@@ -29,49 +29,12 @@ const MobileMenu = () => {
 							<div className="contact_item">
 								<span className="subtitle">Email</span>
 								<div className="text">
-									<Link className="link" href="mailto:support@solvior.com">
-										support@solvior.com
+									<Link className="link" href="mailto:info@clothify-leb.com">
+										info@clothify-leb.com
 									</Link>
 								</div>
-							</div>
-							<div className="contact_item">
-								<span className="subtitle">Phone</span>
-								<div className="text">
-									<Link className="link" href="tel:000123456789">
-										(000) 123 456 789
-									</Link>
-								</div>
-							</div>
-							<div className="contact_item">
-								<span className="subtitle">Location</span>
-								<div className="text">Santa, United State</div>
 							</div>
 						</div>
-					</div>
-					<div className="hamburger-socials">
-						<h4 className="hamburger-title">Follow us</h4>
-						<ul>
-							<li>
-								<Link href="https://www.facebook.com/">
-									<i className="fa-brands fa-facebook-f"></i>
-								</Link>
-							</li>
-							<li>
-								<Link href="https://www.instagram.com/">
-									<i className="fa-brands fa-instagram"></i>
-								</Link>
-							</li>
-							<li>
-								<Link href="https://www.linkedin.com/">
-									<i className="fa-brands fa-linkedin-in"></i>
-								</Link>
-							</li>
-							<li>
-								<Link href="https://x.com/">
-									<i className="fa-brands fa-twitter"></i>
-								</Link>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
