@@ -34,3 +34,4 @@ export default function sitemap() {
 
 	return [...staticEntries, ...portfolioEntries, ...blogEntries];
 }
+
